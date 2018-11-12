@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 	
 	
+	@SuppressWarnings("resource")
 	void change() {
 		
 		Scanner answer1=new Scanner(System.in);
@@ -30,9 +31,11 @@ public class Main {
 		 }
 	}
 	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner start1=new Scanner(System.in);
 		int start = 0;
+		
 		Scanner available1=new Scanner(System.in);
 		int available;
 		

@@ -50,12 +50,7 @@ public class Movie {
 	public void setMovie_price(int movie_price) {
 		this.movie_price = movie_price;
 	}
-	public void setMovie1(Movie movie1) {
-		this.movie1 = movie1;
-	}
-	public void setMovie2(Movie movie2) {
-		this.movie2 = movie2;
-	}
+	
 	
 	static Scanner buymovie1=new Scanner(System.in);
 	 static int buymovie=0;

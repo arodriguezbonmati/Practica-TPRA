@@ -50,12 +50,7 @@ public class Book {
 	public void setBook_price(int book_price) {
 		this.book_price = book_price;
 	}
-	public void setBook1(Book book1) {
-		this.book1 = book1;
-	}
-	public void setBook2(Book book2) {
-		this.book2 = book2;
-	}
+	
 	
 	 static Scanner buybook1=new Scanner(System.in);
 	 static int buybook=0;

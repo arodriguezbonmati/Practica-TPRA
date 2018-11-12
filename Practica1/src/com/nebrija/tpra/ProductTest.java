@@ -6,49 +6,21 @@ import org.junit.jupiter.api.Test;
 
 class ProductTest {
 
+	@Test
+	void testGetStock() {
+		Book book1 = new Book("The Lord of the Rings", 100, "Adventure", 20);
+		assertEquals(book1.getBook_stock(),100);
+	}
+
+	@Test
+	void testGetGenre() {
+		Book book1 = new Book("The Lord of the Rings", 100, "Adventure", 20);
+		assertEquals(book1.getBook_genre(),"Adventure");
+	}
 	
-	void testProduct() {
-		fail("Not yet implemented");
-	}
-
 	@Test
-	void testGetbook_name() {
-		fail("Not yet implemented");
+	void testGetPrice() {
+		Movie movie1=new Movie("Star Wars", 100, "Science-Fiction", 20);
+		assertEquals(movie1.getMovie_price(),20);
 	}
-
-	@Test
-	void testGetmovie_name() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetbook_stock() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testGetmovie_stock() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetbook_name() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetmovie_name() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetbook_stock() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetmovie_stock() {
-		fail("Not yet implemented");
-	}
-
 }
