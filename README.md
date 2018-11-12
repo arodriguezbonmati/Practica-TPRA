@@ -12,15 +12,15 @@ HOW TO USE:
 
 CLASSES:
 
-Main: Contains the method for the currency conversion and the main menu.
+-Main: Contains the method for the currency conversion and the main menu.
 
-Book and Movie: Each class contains its constructor, getters and setters and method.
+-Book and Movie: Each class contains its constructor, getters and setters and method.
 
-User: Contains the constructor and getters and setters for the log in information: username, email and password.
+-User: Contains the constructor and getters and setters for the log in information: username, email and password.
 
-ProductTest: Here you can test the classes Book and Movie.
+-ProductTest: Here you can test the classes Book and Movie.
 
-MyException: Here I tried to develop my own exceptions.
+-MyException: Here I tried to develop my own exceptions.
 
 IMPROVEMENTS:
 
