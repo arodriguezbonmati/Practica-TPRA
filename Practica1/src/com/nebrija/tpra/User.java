@@ -1,8 +1,12 @@
 package com.nebrija.tpra;
 
+import java.util.Scanner;
+
 public class User {
 	
-	private String email, username, password;
+	private static String username="qwerty";
+	private String email="qwerty@gmail.com";
+	private static String password="qwerty1234";
 	
 	public User (String email, String username, String password) {
 		
@@ -17,11 +21,11 @@ public class User {
 		return email;
 	}
 	
-	public String getusername() {
+	public static String getusername() {
 		return username;
 	}
 
-	public String getpassword() {
+	public static String getpassword() {
 		return password;
 	}
 	
@@ -38,4 +42,11 @@ public class User {
 	public void setpassword(String password) {
 		this.password=password;
 	}
+
 }
+	
+	
+
+
+
+
