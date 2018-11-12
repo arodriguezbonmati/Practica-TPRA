@@ -50,7 +50,7 @@ public class Main {
 			
 		
 		
-		while(start !=4) {
+		while(start !=3) {
 			System.out.println("--- WELCOME ---");
 			
 			System.out.println("What would you like to do?");
@@ -83,7 +83,7 @@ public class Main {
 				convert.change();
 				break;
 				
-			case 3:
+			case 3: 
 				System.out.println("Thank you, we hope to see you soon.");
 				break;
 				
@@ -93,6 +93,7 @@ public class Main {
 				}
 			}
 		}else {
+			
 			
 		}
 	}
