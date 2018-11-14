@@ -1,8 +1,7 @@
-# Practica-mejorada
-
+# Improving ecommerce platform.
 Improved the first project which consisted on creating an ecommerce platform with Java.
 
-HOW TO USE:
+# HOW TO USE:
 
 1)When you run the project you are required a username and a password to enter the shop. Username=qwerty Password=qwerty1234.
 
@@ -10,7 +9,7 @@ HOW TO USE:
 
 3)Leave the shop.
 
-CLASSES:
+# CLASSES:
 
 -Main: Contains the method for the currency conversion and the main menu.
 
@@ -22,7 +21,7 @@ CLASSES:
 
 -MyException: Here I tried to develop my own exceptions.
 
-IMPROVEMENTS:
+# IMPROVEMENTS:
 
 1)Log in: Before the username and password were barely used but now they are needed to gain access to the shop.
 
