@@ -33,3 +33,5 @@ IMPROVEMENTS:
 4)Tests: I learned how to do tests and the utility they have.
 
 5)Exceptions: I learned how exceptions work, and what are the different kinds of them, but I did not know how to use them in my project.
+
+6)Encapsulations: I encapsulated in the most restrictive way that I could.
