@@ -13,7 +13,7 @@ public class MyException extends Exception {
 	
 	static void search(String username) throws MyException{
 		
-		if(username != User.getusername() ) {
+		if(username != User.user1.getUsername()) {
 			throw new MyException ("Incorrect username");
 		}
 		

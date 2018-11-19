@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Main {
 	
-	
+	public static void main(String[] args) {
+		User.LogIn();
+		
+	}
 	@SuppressWarnings("resource")
 	void change() {
 		
@@ -31,28 +34,12 @@ public class Main {
 		 }
 	}
 	
-	@SuppressWarnings("resource")
-	public static void main(String[] args) {
+	static void menu() {
 		Scanner start1=new Scanner(System.in);
 		int start = 0;
 		
 		Scanner available1=new Scanner(System.in);
 		int available;
-		
-		System.out.println("Please, enter the necessary data.");
-		System.out.print("Username: ");
-		Scanner username=new Scanner(System.in);
-		String username_1;
-		username_1=username.nextLine();
-		System.out.print("Password: ");
-		Scanner password=new Scanner(System.in);
-		String password_1;
-		password_1=password.nextLine();
-		
-		if(username_1.equals(User.getusername()) && password_1.equals(User.getpassword()) ) {
-			
-		
-		
 		while(start !=3) {
 			System.out.println("--- WELCOME ---");
 			
@@ -95,10 +82,58 @@ public class Main {
 				break;
 				}
 			}
-		}else {
-			
-			
-		}
 	}
-}
+	static void menuEspañol() {
+		Scanner start1=new Scanner(System.in);
+		int start = 0;
+		
+		Scanner available1=new Scanner(System.in);
+		int available;
+		while(start !=3) {
+			System.out.println("---Bienvenido---");
+			
+			System.out.println("¿Qué quieres hacer?");
+			System.out.println(" 1. Ver productos.");
+			System.out.println(" 2. Convertir de € a $.");
+			System.out.println(" 3. Salir.");
+			
+			start=start1.nextInt();
+			
+			switch (start) {
+			
+				
+			case 1:
+				System.out.println("Estos son los productos que están disponibles: ");
+				System.out.println("1. Libros.");
+				System.out.println("2. Películas.");
+				available=available1.nextInt();
+				
+				if(available==1) {
+					Book.books();
+				}else;
+				
+				if(available==2) {
+					Movie.movies();
+				}else;
+				
+				break;
+			case 2:
+				Main convert = new Main();
+				convert.change();
+				break;
+				
+			case 3: 
+				System.out.println("Gracias, esperamos verle pronto.");
+				break;
+				
+			default:
+				System.out.println("Introduce un numero entre 1 y 3.");
+				break;
+				}
+			}
+	}
+	
+	
+	}
+
 

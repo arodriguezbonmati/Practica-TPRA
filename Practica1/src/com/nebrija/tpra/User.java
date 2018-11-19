@@ -1,49 +1,76 @@
 package com.nebrija.tpra;
 
+import java.util.Scanner;
+
 public class User {
 	
-	private static String username="qwerty";
-	private static String email="qwerty@gmail.com";
-	private static String password="qwerty1234";
+	private static  String username;
+	private static  String email;
+	private static  String password;
 	
-	public User (String email, String username, String password) {
+	public User (String username, String email, String password) {
 		
-		User.email = email;
-		User.username = username;
-		User.password = password;
+		this.username= username;
+		this.email = email;
+		this.password = password;
 	}
-
+	
+	static User user1 = new User("Alvaro", "alvaro@gmail.com", "qwerty");
+	
+	
 	
 	//GETTERS
-	public String getemail() {
-		return email;
-	}
-	
-	public static String getusername() {
+	public static String getUsername() {
 		return username;
 	}
 
-	public static String getpassword() {
-		return password;
-	}
-	
-	
-	//SETTERS
-	public void setemail(String email) {
-		User.email=email;
-	}
-	
-	public void setusername(String username ) {
-		User.username=username;
-	}
-	
-	public void setpassword(String password) {
-		User.password=password;
+	public static String getEmail() {
+		return email;
 	}
 
+	public static String getPassword() {
+		return password;
+	}
+
+	//SETTERS
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	} 
+
+	@SuppressWarnings("unlikely-arg-type")
+	public static void LogIn() {
+		System.out.println("Introduce the necessary data");
+		System.out.print("Username: ");
+		Scanner username=new Scanner(System.in);
+		String username_1;
+		username_1=username.nextLine();
+		System.out.print("Email: ");
+		Scanner email=new Scanner(System.in);
+		String email_1;
+		email_1=email.nextLine();
+		System.out.print("Password: ");
+		Scanner password=new Scanner(System.in);
+		String password_1;
+		password_1=password.nextLine();
+		
+		if(username_1.equals(User.getUsername()) && email_1.equals(User.getEmail()) && password_1.equals(User.getPassword())) {
+			Main.menu();
+		}else {
+			System.out.println("Incorrect username/email/password");
+			User.LogIn();
+		}
+	}
+	
+	
 }
-	
-	
 
 
 

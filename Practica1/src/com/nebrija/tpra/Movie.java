@@ -92,6 +92,41 @@ public class Movie {
 			
 			}
 	 }
+	 static void moviesEspañol() {
+		 System.out.println(movie1.movie_name+".");
+			System.out.println("Genero: "+movie1.movie_genre);
+			System.out.println("Quedan "+movie1.movie_stock+" unidades.");
+			System.out.println("Precio: "+movie1.movie_price+"€.");
+			System.out.println();
+			System.out.println(movie2.movie_name+".");
+			System.out.println("Genero: "+movie2.movie_genre);
+			System.out.println("Quedan "+movie2.movie_stock+" unidades.");
+			System.out.println("Precio: "+movie2.movie_price+"€.");
+			System.out.println();
+			System.out.println("¿Quieres comprar alguno?(Sí = 1 / No = 0)");
+			buymovie=buymovie1.nextInt();
+			
+			if(buymovie==1) {
+				System.out.println("¿Cual?");
+				System.out.println("1. "+movie1.movie_name+".");
+				System.out.println("2. "+movie2.movie_name+".");
+				buybuy=buybuy1.nextInt();
+				
+				switch(buybuy) {
+				
+				case 1: System.out.println("Comprado con éxito: "+movie1.movie_name+".");
+				movie1.movie_stock--;
+				break;
+				
+				case 2: System.out.println("Comprado con éxito: "+movie2.movie_name+".");
+				movie2.movie_stock--;
+				break;
+			
+				}
+				
+			
+			}
+	 }
 }
 
 
