@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) {
-		User.LogIn();
-		
+		Main.Language();
 	}
 	@SuppressWarnings("resource")
 	void change() {
@@ -28,6 +27,30 @@ public class Main {
 			double price2 = 0;
 			 price2 = price * 1.15;
 			 System.out.println(price+"€ equals to "+price2+"$.");
+			 System.out.println("");
+			 break;
+		
+		 }
+	}
+	static void changeEspañol() {
+		
+		Scanner answer1=new Scanner(System.in);
+ 		int answer=0;
+ 		
+ 		Scanner price1=new Scanner(System.in);
+        double price = 0;
+        
+        System.out.println("Introduce la cantidad de € que quieres convertir a $.");
+		 price = price1.nextInt();
+		 
+		 System.out.println("Si quieres convertir "+price+"€ a $ pulsa 1.");
+		 answer=answer1.nextInt();
+		 
+		switch(answer) {
+		case 1:
+			double price2 = 0;
+			 price2 = price * 1.15;
+			 System.out.println(price+"€ equivale a "+price2+"$.");
 			 System.out.println("");
 			 break;
 		
@@ -109,17 +132,16 @@ public class Main {
 				available=available1.nextInt();
 				
 				if(available==1) {
-					Book.books();
+					Book.booksEspañol();
 				}else;
 				
 				if(available==2) {
-					Movie.movies();
+					Movie.moviesEspañol();
 				}else;
 				
 				break;
 			case 2:
-				Main convert = new Main();
-				convert.change();
+				Main.changeEspañol();
 				break;
 				
 			case 3: 
@@ -131,6 +153,26 @@ public class Main {
 				break;
 				}
 			}
+	}
+	
+	static void Language() {
+		Scanner language1=new Scanner(System.in);
+		int language = 0;
+		System.out.println("Elige un idioma / Choose a language.");
+		System.out.println("1. Español.");
+		System.out.println("2. English.");
+		language=language1.nextInt();
+		
+		switch(language) {
+			
+		case 1: 
+			Main.menuEspañol();
+		break;
+		
+		case 2:
+			Main.menu();
+		break;
+		}
 	}
 	
 	
