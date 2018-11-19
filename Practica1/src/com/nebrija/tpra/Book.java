@@ -92,41 +92,6 @@ public class Book {
 		
 		}
 	}
-	static void booksEspañol() {
-		System.out.println(book1.book_name+".");
-		System.out.println("Genero: "+book1.book_genre);
-		System.out.println("Quedan "+book1.book_stock+" unidades.");
-		System.out.println("Precio: "+book1.book_price+"€.");
-		System.out.println();
-		System.out.println(book2.book_name+".");
-		System.out.println("Genero: "+book2.book_genre);
-		System.out.println("Quedan "+book2.book_stock+" unidades.");
-		System.out.println("Precio: "+book2.book_price+"€.");
-		System.out.println();
-		System.out.println("¿Quieres comprar alguno?(Sí = 1 / No = 0)");
-		buybook=buybook1.nextInt();
-		
-		if(buybook==1) {
-			System.out.println("¿Cual?");
-			System.out.println("1. "+book1.book_name+".");
-			System.out.println("2. "+book2.book_name+".");
-			buy=buy1.nextInt();
-			
-			switch(buy) {
-			
-			case 1: System.out.println("Comprado con éxito: "+book1.book_name+".");
-			book1.book_stock--;
-			break;
-			
-			case 2: System.out.println("Comprado con éxito: "+book2.book_name+".");
-			book2.book_stock--;
-			break;
-		
-			}
-			
-		
-		}
-	}
 	
 }
 

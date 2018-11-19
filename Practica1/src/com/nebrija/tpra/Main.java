@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) {
-		Main.Language();
+		User.LogIn();
 	}
 	@SuppressWarnings("resource")
 	void change() {
@@ -27,30 +27,6 @@ public class Main {
 			double price2 = 0;
 			 price2 = price * 1.15;
 			 System.out.println(price+"€ equals to "+price2+"$.");
-			 System.out.println("");
-			 break;
-		
-		 }
-	}
-	static void changeEspañol() {
-		
-		Scanner answer1=new Scanner(System.in);
- 		int answer=0;
- 		
- 		Scanner price1=new Scanner(System.in);
-        double price = 0;
-        
-        System.out.println("Introduce la cantidad de € que quieres convertir a $.");
-		 price = price1.nextInt();
-		 
-		 System.out.println("Si quieres convertir "+price+"€ a $ pulsa 1.");
-		 answer=answer1.nextInt();
-		 
-		switch(answer) {
-		case 1:
-			double price2 = 0;
-			 price2 = price * 1.15;
-			 System.out.println(price+"€ equivale a "+price2+"$.");
 			 System.out.println("");
 			 break;
 		
@@ -105,74 +81,6 @@ public class Main {
 				break;
 				}
 			}
-	}
-	static void menuEspañol() {
-		Scanner start1=new Scanner(System.in);
-		int start = 0;
-		
-		Scanner available1=new Scanner(System.in);
-		int available;
-		while(start !=3) {
-			System.out.println("---Bienvenido---");
-			
-			System.out.println("¿Qué quieres hacer?");
-			System.out.println(" 1. Ver productos.");
-			System.out.println(" 2. Convertir de € a $.");
-			System.out.println(" 3. Salir.");
-			
-			start=start1.nextInt();
-			
-			switch (start) {
-			
-				
-			case 1:
-				System.out.println("Estos son los productos que están disponibles: ");
-				System.out.println("1. Libros.");
-				System.out.println("2. Películas.");
-				available=available1.nextInt();
-				
-				if(available==1) {
-					Book.booksEspañol();
-				}else;
-				
-				if(available==2) {
-					Movie.moviesEspañol();
-				}else;
-				
-				break;
-			case 2:
-				Main.changeEspañol();
-				break;
-				
-			case 3: 
-				System.out.println("Gracias, esperamos verle pronto.");
-				break;
-				
-			default:
-				System.out.println("Introduce un numero entre 1 y 3.");
-				break;
-				}
-			}
-	}
-	
-	static void Language() {
-		Scanner language1=new Scanner(System.in);
-		int language = 0;
-		System.out.println("Elige un idioma / Choose a language.");
-		System.out.println("1. Español.");
-		System.out.println("2. English.");
-		language=language1.nextInt();
-		
-		switch(language) {
-			
-		case 1: 
-			Main.menuEspañol();
-		break;
-		
-		case 2:
-			Main.menu();
-		break;
-		}
 	}
 	
 	

@@ -68,29 +68,6 @@ public class User {
 			User.LogIn();
 		}
 	}
-	public static void LogInEspañol() {
-		System.out.println("Introduce los datos necesarios");
-		System.out.print("Nombre de usuario: ");
-		Scanner username=new Scanner(System.in);
-		String username_1;
-		username_1=username.nextLine();
-		System.out.print("Email: ");
-		Scanner email=new Scanner(System.in);
-		String email_1;
-		email_1=email.nextLine();
-		System.out.print("Contraseña: ");
-		Scanner password=new Scanner(System.in);
-		String password_1;
-		password_1=password.nextLine();
-		
-		if(username_1.equals(User.getUsername()) && email_1.equals(User.getEmail()) && password_1.equals(User.getPassword())) {
-			Main.menu();
-		}else {
-			System.out.println("Nombre de usuario / Email / Contraseña incorrecto(s)");
-			User.LogIn();
-		}
-	}
-	
 	
 }
 

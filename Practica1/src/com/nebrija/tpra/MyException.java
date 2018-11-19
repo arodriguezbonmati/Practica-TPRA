@@ -8,9 +8,6 @@ public class MyException extends Exception {
 		
 	}
 	
-	
-	
-	
 	static void search(String username) throws MyException{
 		
 		if(username != User.user1.getUsername()) {
@@ -18,10 +15,6 @@ public class MyException extends Exception {
 		}
 		
 	}
-	
-	
-	
-	
 	
 	public MyException(String username_error) {
 		
