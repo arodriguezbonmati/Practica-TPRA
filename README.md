@@ -1,36 +1,54 @@
 # Improving ecommerce platform.
 Improved the first project which consisted on creating an ecommerce platform with Java.
 
-# HOW TO USE:
+# How to start:
 
-1)When you run the project you are required a username and a password to enter the shop. Username=qwerty Password=qwerty1234.
++ When you run the project you are required a username and a password to enter the shop. Username=qwerty Password=qwerty1234.
 
-2)Once inside the shop you have 2 options. The first one is for buying either books or movies (by reading the instructions and typing the correct numbers. The other option is a € to $ converter. You enter the amount of € you want to convert, press 1 and you have the conversion done.
 
-3)Leave the shop.
+# Main menu
+ ```
+--- WELCOME ---
+What would you like to do?
+ 1. Check our products.
+ 2. Search products by genre.
+ 3. Convert from € to $.
+ 4. Leave the shop.
+```
 
-# CLASSES:
++ The first option lets you see all the products available classified by category, here you can also buy products.
 
--Main: Contains the method for the currency conversion and the main menu.
++ The second option enables you to browse the book and movie genres and choose from there.
 
--Book and Movie: Each class contains its constructor, getters and setters and method.
++ The third option is for converting currency from € to $.
 
--User: Contains the constructor and getters and setters for the log in information: username, email and password.
++ The last option is used to leave the shop.
 
--Test Classes: Here you can test the classes.
+# Testing
 
--MyException: Here I tried to develop my own exceptions.
+Most of the project is tested by the different classes such as UserTest and ProductTest.
 
-# IMPROVEMENTS:
+Example of the Username testing.
 
-1)Log in: Before the username and password were barely used but now they are needed to gain access to the shop.
+ ```
+class UserTest {
 
-2)Stock: Improved Book and Movie and now there is a proper "catalogue" where you can see each products' name, genre, stock and price.
+	@Test
+	void testGetEmail() {
+		User user1 = new User("Alvaro", "alvaro@gmail.com", "qwerty");
+		assertEquals(user1.getUsername(), "Alvaro");
+	}
+	
+```
 
-3)Resource leaks: Fixed all the warnings for resource leak on the project.
+# Handling Exceptions
 
-4)Tests: I learned how to do tests and the utility they have.
+There is also a Custom Exception made for the identification process in case it fails. For instance, this is the method that throws the exception when you enter the wrong username.
 
-5)Exceptions: I learned how exceptions work, and what are the different kinds of them, but I did not know how to use them in my project.
-
-6)Encapsulations: I encapsulated in the most restrictive way that I could.
+```
+public void validateI(String i) throws MyException{
+		if(!i.equals("Alvaro")) {
+			throw new MyException("Incorrect user");
+		}
+	}
+```
