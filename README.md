@@ -66,3 +66,8 @@ Choose a language
 2. English
 3. Deutsch
 ```
+
+# Design patterns + Interface
+
+Implemented Proxy Design Pattern and Interface.
+This Design Patterns implements a raffle where, by buying a book, you enter a draw where you can get a 1€ discount on all books.
