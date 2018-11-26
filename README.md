@@ -60,4 +60,9 @@ public void validateI(String i) throws MyException{
 # Internationalization
 
 The project is fully functional in English, Spanish and German.
-
+```
+Choose a language
+1. Español
+2. English
+3. Deutsch
+```
