@@ -1,0 +1,8 @@
+Welcome = Welcome
+Do = What would you like to do?
+Products = 1. Check our products.
+Genre = 2. Search products by genre.
+Euros = 3. Convert from € to $.
+Leave = 4. Leave the shop.
+Hope = We hope to see you soon.
+Number = Introduce a number between 1 and 3.
