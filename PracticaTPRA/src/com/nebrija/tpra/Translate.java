@@ -45,6 +45,9 @@ public class Translate {
     static String string35;
     static String string36;
     static String string37;
+    static String string38;
+    static String string39;
+    
     
     /*static String stringexit;*/
     
@@ -93,6 +96,8 @@ public class Translate {
         string35 = messages.getString("War");
         string36 = messages.getString("Entertainment");
         string37 = messages.getString("Action");
+        string38 = messages.getString("realsurprise");
+        string39 = messages.getString("proxysurprise");
         
         
         
@@ -261,6 +266,14 @@ public class Translate {
 		return stringexit;
 	}*/
 
+
+	protected static String getString38() {
+		return string38;
+	}
+
+	protected static String getString39() {
+		return string39;
+	}
 
 	protected static void setLanguage(String language ) {
 		Translate.language = language;

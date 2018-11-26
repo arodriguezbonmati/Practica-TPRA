@@ -10,6 +10,7 @@ public class Main {
 		
 	}
 	
+	@SuppressWarnings("resource")
 	public static void international() {
 		
 		
@@ -127,6 +128,7 @@ public class Main {
 		 }
 	
 	
+	@SuppressWarnings("resource")
 	static void search() {
 		Scanner s1=new Scanner(System.in);
 		int s=0;
@@ -189,35 +191,35 @@ public class Main {
 			
 			switch(sa) {
 			case 1:
-				System.out.println(Movie.movie1.getMovie_name());
+				System.out.println(Translate.getString28());
 				System.out.println(Movie.movie1.getMovie_price()+"€.");
 				System.out.println();
 				Main.international();
 			break;
 			
 			case 2:
-				System.out.println(Movie.movie2.getMovie_name());
+				System.out.println(Translate.getString29());
 				System.out.println(Movie.movie2.getMovie_price()+"€.");
 				System.out.println();
 				Main.international();
 			break;
 			
 			case 3:
-				System.out.println(Movie.movie3.getMovie_name());
+				System.out.println(Translate.getString30());
 				System.out.println(Movie.movie3.getMovie_price()+"€.");
 				System.out.println();
 				Main.international();
 			break;
 			
 			case 4:
-				System.out.println(Movie.movie4.getMovie_name());
+				System.out.println(Translate.getString31());
 				System.out.println(Movie.movie4.getMovie_price()+"€.");
 				System.out.println();
 				Main.international();
 			break;
 			
 			case 5:
-				System.out.println(Movie.movie5.getMovie_name());
+				System.out.println(Translate.getString32());
 				System.out.println(Movie.movie5.getMovie_price()+"€.");
 				System.out.println();
 				Main.international();

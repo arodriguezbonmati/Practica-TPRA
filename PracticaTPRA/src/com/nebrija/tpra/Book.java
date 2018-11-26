@@ -60,6 +60,7 @@ public class Book {
 	 static Scanner buy1=new Scanner(System.in);
 	 static int buy=0;
 	 
+	@SuppressWarnings("unused")
 	static void books() {
 		System.out.println(book1.book_name+".");
 		System.out.println(Translate.getString17()+" "+book1.book_genre);
@@ -102,26 +103,117 @@ public class Book {
 			
 			case 1: System.out.println(Translate.getString25()+" "+book1.book_name+".");
 			book1.book_stock--;
+			Surprise surprise = null;
+			try {
+		
+			if (RandomSorteo.value){
+			surprise = new RealSurprise();
+			surprise.regalo();
+			book1.book_price--;
+			book2.book_price--;
+			book3.book_price--;
+			book4.book_price--;
+			book5.book_price--;
+			}else{
+			surprise = new ProxySurprise();
+			surprise.regalo();
+			}
+			} catch (Exception e) {
+			return;
+			}
 			Main.international();
+			
 			break;
 			
 			case 2: System.out.println(Translate.getString25()+" "+book2.book_name+".");
 			book2.book_stock--;
+			Surprise surprise2 = null;
+			try {
+		
+			if (RandomSorteo.value){
+			surprise = new RealSurprise();
+			surprise.regalo();
+			book1.book_price--;
+			book2.book_price--;
+			book3.book_price--;
+			book4.book_price--;
+			book5.book_price--;
+			}else{
+			surprise = new ProxySurprise();
+			surprise.regalo();
+			}
+			} catch (Exception e) {
+			return;
+			}
 			Main.international();
 			break;
 			
 			case 3: System.out.println(Translate.getString25()+" "+book3.book_name+".");
 			book3.book_stock--;
+			Surprise surprise3 = null;
+			try {
+		
+			if (RandomSorteo.value){
+			surprise = new RealSurprise();
+			surprise.regalo();
+			book1.book_price--;
+			book2.book_price--;
+			book3.book_price--;
+			book4.book_price--;
+			book5.book_price--;
+			}else{
+			surprise = new ProxySurprise();
+			surprise.regalo();
+			}
+			} catch (Exception e) {
+			return;
+			}
 			Main.international();
 			break;
 			
 			case 4: System.out.println(Translate.getString25()+" "+book4.book_name+".");
 			book4.book_stock--;
+			Surprise surprise4 = null;
+			try {
+		
+			if (RandomSorteo.value){
+			surprise = new RealSurprise();
+			surprise.regalo();
+			book1.book_price--;
+			book2.book_price--;
+			book3.book_price--;
+			book4.book_price--;
+			book5.book_price--;
+			}else{
+			surprise = new ProxySurprise();
+			surprise.regalo();
+			}
+			} catch (Exception e) {
+			return;
+			}
 			Main.international();
 			break;
 			
 			case 5: System.out.println(Translate.getString25()+" "+book5.book_name+".");
 			book5.book_stock--;
+			Surprise surprise5 = null;
+			try {
+		
+			if (RandomSorteo.value){
+			surprise = new RealSurprise();
+			surprise.regalo();
+			book1.book_price--;
+			book2.book_price--;
+			book3.book_price--;
+			book4.book_price--;
+			book5.book_price--;
+			}else{
+			surprise = new ProxySurprise();
+			surprise.regalo();
+			}
+			} catch (Exception e) {
+			return;
+			}
 			Main.international();
 			break;
 		
@@ -134,17 +226,3 @@ public class Book {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

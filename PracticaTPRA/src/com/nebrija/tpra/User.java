@@ -8,6 +8,8 @@ public class User {
 	private static  String email;
 	private static  String password;
 	
+	
+	@SuppressWarnings("static-access")
 	public User (String username, String email, String password) {
 		
 		this.username= username;
@@ -32,20 +34,24 @@ public class User {
 		return password;
 	}
 
+
 	//SETTERS
+	@SuppressWarnings("static-access")
 	public void setUsername(String username) {
 		this.username = username;
 	}
 
+	@SuppressWarnings("static-access")
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+	@SuppressWarnings("static-access")
 	public void setPassword(String password) {
 		this.password = password;
 	} 
 
-	@SuppressWarnings("unlikely-arg-type")
+	@SuppressWarnings({"resource" })
 	public static void LogIn() {
 		System.out.println("Introduce the necessary data");
 		System.out.print("Username: ");
