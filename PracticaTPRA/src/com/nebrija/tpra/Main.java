@@ -1,6 +1,5 @@
 package com.nebrija.tpra;
 
-import java.util.Properties;
 import java.util.Scanner;
 
 
@@ -120,6 +119,7 @@ public class Main {
 			 price2 = price * 1.15;
 			 System.out.println(price+"€ equals to "+price2+"$.");
 			 System.out.println("");
+			 Main.international();
 		}else {
 			Main.international();
 		}
