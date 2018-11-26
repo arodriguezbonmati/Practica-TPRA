@@ -14,11 +14,11 @@ public class Book {
 		this.book_price=book_price;
 	}
 	
-	static Book book1=new Book("The Lord of the Rings", 100, "Adventure", 20);
-	static Book book2=new Book("The Da Vinci Code", 100,"History", 30);
-	static Book book3=new Book("Think in Java", 25, "Science", 40);
-	static Book book4=new Book("The Hobbit", 40, "Adventure", 20);
-	static Book book5=new Book("Tom Sawyer", 10, "Adventure", 10);
+	static Book book1=new Book(Translate.getString12(), 100,Translate.getString20(), 20);
+	static Book book2=new Book(Translate.getString13(), 100,Translate.getString18(), 30);
+	static Book book3=new Book(Translate.getString14(), 25, Translate.getString19(), 40);
+	static Book book4=new Book(Translate.getString15(), 40, Translate.getString20(), 20);
+	static Book book5=new Book(Translate.getString16(), 10, Translate.getString20(), 10);
 	
 	//GETTERS
 	public String getBook_name() {
@@ -62,35 +62,35 @@ public class Book {
 	 
 	static void books() {
 		System.out.println(book1.book_name+".");
-		System.out.println("Genre: "+book1.book_genre);
-		System.out.println(book1.book_stock+" units left.");
-		System.out.println("Price: "+book1.book_price+"€.");
+		System.out.println(Translate.getString17()+" "+book1.book_genre);
+		System.out.println(book1.book_stock+" "+Translate.getString21());
+		System.out.println(Translate.getString22()+" "+book1.book_price+"€.");
 		System.out.println();
 		System.out.println(book2.book_name+".");
-		System.out.println("Genre: "+book2.book_genre);
-		System.out.println(book2.book_stock+" units left.");
-		System.out.println("Price: "+book2.book_price+"€.");
+		System.out.println(Translate.getString17()+" "+book2.book_genre);
+		System.out.println(book2.book_stock+" "+Translate.getString21());
+		System.out.println(Translate.getString22()+" "+book2.book_price+"€.");
 		System.out.println();
 		System.out.println(book3.book_name+".");
-		System.out.println("Genre: "+book3.book_genre);
-		System.out.println(book3.book_stock+" units left.");
-		System.out.println("Price: "+book3.book_price+"€.");
+		System.out.println(Translate.getString17()+" "+book3.book_genre);
+		System.out.println(book3.book_stock+" "+Translate.getString21());
+		System.out.println(Translate.getString22()+" "+book3.book_price+"€.");
 		System.out.println();
 		System.out.println(book4.book_name+".");
-		System.out.println("Genre: "+book4.book_genre);
-		System.out.println(book4.book_stock+" units left.");
-		System.out.println("Price: "+book4.book_price+"€.");
+		System.out.println(Translate.getString17()+" "+book4.book_genre);
+		System.out.println(book4.book_stock+" "+Translate.getString21());
+		System.out.println(Translate.getString22()+" "+book4.book_price+"€.");
 		System.out.println();
 		System.out.println(book5.book_name+".");
-		System.out.println("Genre: "+book5.book_genre);
-		System.out.println(book5.book_stock+" units left.");
-		System.out.println("Price: "+book5.book_price+"€.");
+		System.out.println(Translate.getString17()+" "+book5.book_genre);
+		System.out.println(book5.book_stock+" "+Translate.getString21());
+		System.out.println(Translate.getString22()+" "+book5.book_price+"€.");
 		System.out.println();
-		System.out.println("Would you like to buy one?(yes=1/no=0)");
+		System.out.println(Translate.getString23());
 		buybook=buybook1.nextInt();
 		
 		if(buybook==1) {
-			System.out.println("Which one?");
+			System.out.println(Translate.getString24());
 			System.out.println("1. "+book1.book_name+".");
 			System.out.println("2. "+book2.book_name+".");
 			System.out.println("3. "+book3.book_name+".");
@@ -100,29 +100,36 @@ public class Book {
 			
 			switch(buy) {
 			
-			case 1: System.out.println("Successfully purchased "+book1.book_name+".");
+			case 1: System.out.println(Translate.getString25()+" "+book1.book_name+".");
 			book1.book_stock--;
+			Main.international();
 			break;
 			
-			case 2: System.out.println("Successfully purchased "+book2.book_name+".");
+			case 2: System.out.println(Translate.getString25()+" "+book2.book_name+".");
 			book2.book_stock--;
+			Main.international();
 			break;
 			
-			case 3: System.out.println("Successfully purchased "+book3.book_name+".");
+			case 3: System.out.println(Translate.getString25()+" "+book3.book_name+".");
 			book3.book_stock--;
+			Main.international();
 			break;
 			
-			case 4: System.out.println("Successfully purchased "+book4.book_name+".");
+			case 4: System.out.println(Translate.getString25()+" "+book4.book_name+".");
 			book4.book_stock--;
+			Main.international();
 			break;
 			
-			case 5: System.out.println("Successfully purchased "+book5.book_name+".");
+			case 5: System.out.println(Translate.getString25()+" "+book5.book_name+".");
 			book5.book_stock--;
+			Main.international();
 			break;
 		
 			}
 			
 		
+		}else {
+			Main.international();
 		}
 	}
 	

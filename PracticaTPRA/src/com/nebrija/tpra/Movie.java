@@ -14,11 +14,11 @@ public class Movie {
 		this.movie_price=movie_price;
 	}
 	
-	static Movie movie1=new Movie("Star Wars", 100, "Science-Fiction", 20);
-	static Movie movie2=new Movie("The Shining", 30, "Horror", 25);
-	static Movie movie3=new Movie("Save Private Ryan", 55, "War", 15);
-	static Movie movie4=new Movie("Toy Story", 200, "Family Entertainment", 30);
-	static Movie movie5=new Movie("Need for Speed", 50, "Action", 10);
+	static Movie movie1=new Movie(Translate.getString28(), 100, Translate.getString33(), 20);
+	static Movie movie2=new Movie(Translate.getString29(), 30, Translate.getString34(), 25);
+	static Movie movie3=new Movie(Translate.getString30(), 55, Translate.getString35(), 15);
+	static Movie movie4=new Movie(Translate.getString31(), 200, Translate.getString36(), 30);
+	static Movie movie5=new Movie(Translate.getString32(), 50, Translate.getString37(), 10);
 
 	//GETTERS
 	public String getMovie_name() {
@@ -62,35 +62,35 @@ public class Movie {
 	 
 	 static void movies() {
 		 	System.out.println(movie1.movie_name+".");
-			System.out.println("Genre: "+movie1.movie_genre);
-			System.out.println(movie1.movie_stock+" units left.");
-			System.out.println("Price: "+movie1.movie_price+"€.");
+			System.out.println(Translate.getString17()+" "+movie1.movie_genre);
+			System.out.println(movie1.movie_stock+" "+Translate.getString21());
+			System.out.println(Translate.getString22()+" "+movie1.movie_price+"€.");
 			System.out.println();
 			System.out.println(movie2.movie_name+".");
-			System.out.println("Genre: "+movie2.movie_genre);
-			System.out.println(movie2.movie_stock+" units left.");
-			System.out.println("Price: "+movie2.movie_price+"€.");
+			System.out.println(Translate.getString17()+" "+movie2.movie_genre);
+			System.out.println(movie2.movie_stock+" "+Translate.getString21());
+			System.out.println(Translate.getString22()+" "+movie2.movie_price+"€.");
 			System.out.println();
 			System.out.println(movie3.movie_name+".");
-			System.out.println("Genre: "+movie3.movie_genre);
-			System.out.println(movie3.movie_stock+" units left.");
-			System.out.println("Price: "+movie3.movie_price+"€.");
+			System.out.println(Translate.getString17()+" "+movie3.movie_genre);
+			System.out.println(movie3.movie_stock+" "+Translate.getString21());
+			System.out.println(Translate.getString22()+" "+movie3.movie_price+"€.");
 			System.out.println();
 			System.out.println(movie4.movie_name+".");
-			System.out.println("Genre: "+movie4.movie_genre);
-			System.out.println(movie4.movie_stock+" units left.");
-			System.out.println("Price: "+movie4.movie_price+"€.");
+			System.out.println(Translate.getString17()+" "+movie4.movie_genre);
+			System.out.println(movie4.movie_stock+" "+Translate.getString21());
+			System.out.println(Translate.getString22()+" "+movie4.movie_price+"€.");
 			System.out.println();
 			System.out.println(movie5.movie_name+".");
-			System.out.println("Genre: "+movie5.movie_genre);
-			System.out.println(movie5.movie_stock+" units left.");
-			System.out.println("Price: "+movie5.movie_price+"€.");
+			System.out.println(Translate.getString17()+" "+movie5.movie_genre);
+			System.out.println(movie5.movie_stock+" "+Translate.getString21());
+			System.out.println(Translate.getString22()+" "+movie5.movie_price+"€.");
 			System.out.println();
-			System.out.println("Would you like to buy one?(yes=1/no=0)");
+			System.out.println(Translate.getString23());
 			buymovie=buymovie1.nextInt();
 			
 			if(buymovie==1) {
-				System.out.println("Which one?");
+				System.out.println(Translate.getString24());
 				System.out.println("1. "+movie1.movie_name+".");
 				System.out.println("2. "+movie2.movie_name+".");
 				System.out.println("3. "+movie3.movie_name+".");
@@ -100,29 +100,36 @@ public class Movie {
 				
 				switch(buybuy) {
 				
-				case 1: System.out.println("Successfully purchased "+movie1.movie_name+".");
+				case 1: System.out.println(Translate.getString25()+" "+movie1.movie_name+".");
 				movie1.movie_stock--;
+				Main.international();
 				break;
 				
-				case 2: System.out.println("Successfully purchased "+movie2.movie_name+".");
+				case 2: System.out.println(Translate.getString25()+" "+movie2.movie_name+".");
 				movie2.movie_stock--;
+				Main.international();
 				break;
 				
-				case 3: System.out.println("Successfully purchased "+movie3.movie_name+".");
+				case 3: System.out.println(Translate.getString25()+" "+movie3.movie_name+".");
 				movie3.movie_stock--;
+				Main.international();
 				break;
 				
-				case 4: System.out.println("Successfully purchased "+movie4.movie_name+".");
+				case 4: System.out.println(Translate.getString25()+" "+movie4.movie_name+".");
 				movie4.movie_stock--;
+				Main.international();
 				break;
 				
-				case 5: System.out.println("Successfully purchased "+movie5.movie_name+".");
+				case 5: System.out.println(Translate.getString25()+" "+movie5.movie_name+".");
 				movie5.movie_stock--;
+				Main.international();
 				break;
 			
 				}
 				
 			
+			}else {
+				Main.international();
 			}
 	 }
 	
