@@ -1,9 +1,13 @@
 # Improving ecommerce platform.
-Improved the first project which consisted on creating an ecommerce platform with Java.
+Improved the second project which consisted on creating an ecommerce platform with Java.
 
 # How to start:
 
-+ When you run the project you are required a username and a password to enter the shop. Username=qwerty Password=qwerty1234.
+When you run the project you are required a username an email and a password:
+
++ Username: Alvaro
++ Email: alvaro@gmail.com
++ Password: qwerty
 
 
 # Main menu
@@ -52,3 +56,8 @@ public void validateI(String i) throws MyException{
 		}
 	}
 ```
+
+# Internationalization
+
+The project is fully functional in English, Spanish and German.
+
