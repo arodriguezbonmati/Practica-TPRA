@@ -1,7 +1,7 @@
 Welcome = Welcome
 Do = What would you like to do?
 Products = Check our products.
-Genre = Search products by genre.
+Gen = Search products by genre.
 Euros = Convert from € to $.
 Leave = Leave the shop.
 Hope = We hope to see you soon.
@@ -14,7 +14,7 @@ Vinci = The Da Vinci Code
 Java = Think in Java
 Hobbit = The Hobbit
 Sawyer = Tom Sawyer
-Genre2 = Genre
+G = Genre
 History = History
 Science = Science
 Adventure = Adventure

@@ -45,7 +45,8 @@ public class Translate {
     static String string35;
     static String string36;
     static String string37;
-    static String stringexit;
+    
+    /*static String stringexit;*/
     
     
 	public static void translate() {
@@ -58,7 +59,7 @@ public class Translate {
         string1 = messages.getString("Welcome");
         string2 = messages.getString("Do");
         string3 = messages.getString("Products");
-        string4 = messages.getString("Genre");
+        string4 = messages.getString("Gen");
         string5 = messages.getString("Euros");
         string6 = messages.getString("Leave");
         string7 = messages.getString("Hope");
@@ -71,7 +72,7 @@ public class Translate {
         string14 = messages.getString("Java");
         string15 = messages.getString("Hobbit");
         string16 = messages.getString("Sawyer");
-        string17 = messages.getString("Genre");
+        string17 = messages.getString("G");
         string18 = messages.getString("History");
         string19 = messages.getString("Science");
         string20 = messages.getString("Adventure");
@@ -256,9 +257,10 @@ public class Translate {
 		return string37;
 	}
 
-	protected static String getStringexit() {
+	/*protected static String getStringexit() {
 		return stringexit;
-	}
+	}*/
+
 
 	protected static void setLanguage(String language ) {
 		Translate.language = language;
