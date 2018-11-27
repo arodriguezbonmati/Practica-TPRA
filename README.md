@@ -30,7 +30,7 @@ What would you like to do?
 
 # Testing
 
-Most of the project is tested by the different classes such as UserTest and ProductTest.
+Most of the project is tested by the different classes such as UserTest, ProductTest and InternationalizationTest.
 
 Example of the Username testing.
 
