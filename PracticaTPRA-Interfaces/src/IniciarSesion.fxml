@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nebrija.tpra.ControllerIniciarSesion">
+   <children>
+      <Label fx:id="titleText" layoutX="260.0" layoutY="75.0" text="LOG IN">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameText" layoutX="206.0" layoutY="150.0" text="Username" />
+      <Label fx:id="emailText" layoutX="229.0" layoutY="183.0" text="Email" />
+      <Label fx:id="passwordText" layoutX="208.0" layoutY="215.0" text="Password" />
+      <TextField fx:id="usernameField" layoutX="270.0" layoutY="146.0" />
+      <TextField fx:id="emailField" layoutX="270.0" layoutY="179.0" />
+      <PasswordField fx:id="passwordField" layoutX="270.0" layoutY="211.0" />
+      <Button fx:id="enterButton" layoutX="319.0" layoutY="265.0" mnemonicParsing="false" onAction="#pressedButtonEnter" text="Enter" />
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="535.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/España.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="535.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Reino%20Unido.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="535.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Alemania.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioEspaña" layoutX="514.0" layoutY="30.0" mnemonicParsing="false" onAction="#pressedEspaña">
+         <toggleGroup>
+            <ToggleGroup fx:id="botonIdioma" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioReinoUnido" layoutX="514.0" layoutY="52.0" mnemonicParsing="false" onAction="#pressedReinoUnido" toggleGroup="$botonIdioma" />
+      <RadioButton fx:id="radioAlemania" layoutX="514.0" layoutY="73.0" mnemonicParsing="false" onAction="#pressedAlemania" toggleGroup="$botonIdioma" />
+      <Button fx:id="exitIniciarSesion" layoutX="323.0" layoutY="318.0" mnemonicParsing="false" onAction="#exitIniciarSesion" text="Exit" />
+   </children>
+</Pane>

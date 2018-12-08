@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nebrija.tpra.ControllerConversor">
+   <children>
+      <Label layoutX="230.0" layoutY="63.0" text="CONVERTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numeroEuros" layoutX="202.0" layoutY="141.0" prefHeight="25.0" prefWidth="172.0" />
+      <TextField fx:id="calculado" layoutX="204.0" layoutY="227.0" prefHeight="25.0" prefWidth="172.0" />
+      <Label layoutX="386.0" layoutY="140.0" text="€">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="moneda" layoutX="386.0" layoutY="226.0" text="\$">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="183.0" text="\$">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="183.0" text="£">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="183.0" text="¥">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="279.0" layoutY="339.0" mnemonicParsing="false" onAction="#exitConverter" text="Exit" />
+      <RadioButton layoutX="204.0" layoutY="188.0" mnemonicParsing="false" onAction="#radioDolar">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioCurrency" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="279.0" layoutY="188.0" mnemonicParsing="false" onAction="#radioLibra" toggleGroup="$radioCurrency" />
+      <RadioButton layoutX="345.0" layoutY="188.0" mnemonicParsing="false" onAction="#radioYen" prefHeight="17.0" prefWidth="10.0" toggleGroup="$radioCurrency" />
+   </children>
+</Pane>
