@@ -1,5 +1,10 @@
 # Improving ecommerce platform.
-Improved the second project which consisted on creating an ecommerce platform with Java.
+Improved the project which consisted on creating an ecommerce platform with Java.
+
+# Important:
+
++ To run the project in the console download the file named PracticaTPRA.
++ To run the project with graphic interfaces download the file named PracticaTPRA-Interfaces
 
 # How to start:
 
