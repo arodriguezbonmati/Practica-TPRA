@@ -42,6 +42,14 @@ The project is fully functional in English, Spanish and German. It comes by defa
 
 ![internacional](https://user-images.githubusercontent.com/43890020/50490873-b3de7a80-0a0f-11e9-8b55-4b6fd3c3a572.png)
 
+# Threads
+
+I have implementated a thread which, when you buy the book The Lord of the Rings, writes the name on a txt file called Bought.txt.
+The thread has been implementated with Synchronized so that other threads can work at the same time.
+Here is an example of the writing on the file.
+
+![txt](https://user-images.githubusercontent.com/43890020/50494620-b39caa00-0a24-11e9-8dba-5bb87dc8b0ab.png)
+
 
 # Handling Exceptions
 
