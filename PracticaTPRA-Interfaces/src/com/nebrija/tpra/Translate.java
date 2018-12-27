@@ -57,6 +57,9 @@ public class Translate {
     static String string47;
     static String string48;
     static String string49;
+    static String string50;
+    static String string51;
+    static String string52;
     
     
     
@@ -119,6 +122,9 @@ public class Translate {
         string47 = messages.getString("converterButton");
         string48 = messages.getString("availableProducts");
         string49 = messages.getString("Exit");
+        string50 = messages.getString("availableBooks");
+        string51 = messages.getString("availableMovies");
+        string52 = messages.getString("select1");
         
         
         
@@ -337,5 +343,17 @@ public class Translate {
 
 	protected static String getString49() {
 		return string49;
+	}
+
+	protected static String getString50() {
+		return string50;
+	}
+
+	protected static String getString51() {
+		return string51;
+	}
+
+	protected static String getString52() {
+		return string52;
 	}
 }

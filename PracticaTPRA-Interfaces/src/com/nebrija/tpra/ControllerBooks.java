@@ -10,47 +10,110 @@ import javafx.scene.input.MouseEvent;
 
 public class ControllerBooks {
 
-    @FXML
-    private Label availableBooksTitle;
+	 	@FXML
+	    private Label availableBooksTitle;
 
-    @FXML
-    private RadioButton LordRings;
+	    @FXML
+	    private RadioButton LordRings;
 
-    @FXML
-    private ToggleGroup books;
+	    @FXML
+	    private ToggleGroup books;
 
-    @FXML
-    private Label ringsStock;
+	    @FXML
+	    private Label ringsStock;
 
-    @FXML
-    private RadioButton VinciCode;
+	    @FXML
+	    private RadioButton VinciCode;
 
-    @FXML
-    private Label vinciStock;
+	    @FXML
+	    private Label vinciStock;
 
-    @FXML
-    private RadioButton ThinkJava;
+	    @FXML
+	    private RadioButton ThinkJava;
 
-    @FXML
-    private Label javaStock;
+	    @FXML
+	    private Label javaStock;
 
-    @FXML
-    private RadioButton Hobbit;
+	    @FXML
+	    private RadioButton Hobbit;
 
-    @FXML
-    private Label hobbitStock;
+	    @FXML
+	    private Label hobbitStock;
 
-    @FXML
-    private RadioButton Sawyer;
+	    @FXML
+	    private RadioButton Sawyer;
 
-    @FXML
-    private Label sawyerStock;
+	    @FXML
+	    private Label sawyerStock;
 
-    @FXML
-    private Label Selectonebook;
+	    @FXML
+	    private Label Selectonebook;
 
-    @FXML
-    private Button exitBooks;
+	    @FXML
+	    private Button exitBooks;
+
+	    @FXML
+	    private RadioButton radioEspaña;
+
+	    @FXML
+	    private ToggleGroup botonIdio;
+
+	    @FXML
+	    private RadioButton radioReinoUnido;
+
+	    @FXML
+	    private RadioButton radioAlemania;
+	    
+	    @FXML
+	    void pressedAlemania(ActionEvent event) {
+	    	String g = "al";
+		    String t = "AL";
+		    Translate.setCountry(t);
+			Translate.setLanguage(g);
+			Translate.translate();
+			availableBooksTitle.setText(Translate.getString50());
+			Selectonebook.setText(Translate.getString52());
+			LordRings.setText(Translate.getString12());
+			VinciCode.setText(Translate.getString13());
+			ThinkJava.setText(Translate.getString14());
+			Hobbit.setText(Translate.getString15());
+			Sawyer.setText(Translate.getString16());
+			exitBooks.setText(Translate.getString49());
+	    }
+
+	    @FXML
+	    void pressedEspaña(ActionEvent event) {
+	    	String g = "es";
+		    String t = "ES";
+		    Translate.setCountry(t);
+			Translate.setLanguage(g);
+			Translate.translate();
+			availableBooksTitle.setText(Translate.getString50());
+			Selectonebook.setText(Translate.getString52());
+			LordRings.setText(Translate.getString12());
+			VinciCode.setText(Translate.getString13());
+			ThinkJava.setText(Translate.getString14());
+			Hobbit.setText(Translate.getString15());
+			Sawyer.setText(Translate.getString16());
+			exitBooks.setText(Translate.getString49());
+	    }
+	    
+	    @FXML
+	    void pressedReinoUnido(ActionEvent event) {
+	    	String g = "en";
+		    String t = "EN";
+		    Translate.setCountry(t);
+			Translate.setLanguage(g);
+			Translate.translate();
+			availableBooksTitle.setText(Translate.getString50());
+			Selectonebook.setText(Translate.getString52());
+			LordRings.setText(Translate.getString12());
+			VinciCode.setText(Translate.getString13());
+			ThinkJava.setText(Translate.getString14());
+			Hobbit.setText(Translate.getString15());
+			Sawyer.setText(Translate.getString16());
+			exitBooks.setText(Translate.getString49());
+	    }
 
     @FXML
     void pressedExit(ActionEvent event) {

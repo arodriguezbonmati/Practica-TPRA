@@ -4,39 +4,63 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nebrija.tpra.ControllerMovies">
    <children>
-      <Label layoutX="188.0" layoutY="33.0" text="AVAILABLE MOVIES">
+      <Label fx:id="availablemovies" layoutX="188.0" layoutY="33.0" text="AVAILABLE MOVIES">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <RadioButton layoutX="89.0" layoutY="116.0" mnemonicParsing="false" onAction="#radioStar" text="Star Wars">
+      <RadioButton fx:id="starwars" layoutX="89.0" layoutY="116.0" mnemonicParsing="false" onAction="#radioStar" text="Star Wars">
          <toggleGroup>
             <ToggleGroup fx:id="movies" />
          </toggleGroup></RadioButton>
       <Label layoutX="110.0" layoutY="133.0" text="Genre: Science-Fiction" />
       <Label layoutX="110.0" layoutY="150.0" text="Price: 20€" />
       <Label fx:id="starStock" layoutX="110.0" layoutY="167.0" text="Stock: 100" />
-      <RadioButton layoutX="89.0" layoutY="199.0" mnemonicParsing="false" onAction="#radioShining" text="The Shining" toggleGroup="$movies" />
+      <RadioButton fx:id="shining" layoutX="89.0" layoutY="199.0" mnemonicParsing="false" onAction="#radioShining" text="The Shining" toggleGroup="$movies" />
       <Label layoutX="110.0" layoutY="218.0" text="Genre:  Horror" />
       <Label layoutX="110.0" layoutY="235.0" text="Price: 25€" />
       <Label fx:id="shiningStock" layoutX="110.0" layoutY="252.0" text="Stock: 30" />
-      <RadioButton layoutX="89.0" layoutY="282.0" mnemonicParsing="false" onAction="#radioRyan" text="Save Private Ryan" toggleGroup="$movies" />
+      <RadioButton fx:id="ryan" layoutX="89.0" layoutY="282.0" mnemonicParsing="false" onAction="#radioRyan" text="Save Private Ryan" toggleGroup="$movies" />
       <Label layoutX="109.0" layoutY="299.0" text="Genre: War" />
       <Label layoutX="110.0" layoutY="316.0" text="Price: 15€" />
       <Label fx:id="ryanStock" layoutX="111.0" layoutY="333.0" text="Stock: 55" />
-      <RadioButton layoutX="366.0" layoutY="116.0" mnemonicParsing="false" onAction="#radioToy" text="Toy Story" toggleGroup="$movies" />
+      <RadioButton fx:id="toy" layoutX="366.0" layoutY="116.0" mnemonicParsing="false" onAction="#radioToy" text="Toy Story" toggleGroup="$movies" />
       <Label layoutX="388.0" layoutY="133.0" text="Genre: Family Entertainment" />
       <Label layoutX="388.0" layoutY="150.0" text="Price: 30€" />
       <Label fx:id="toyStock" layoutX="388.0" layoutY="167.0" text="Stock: 200" />
-      <RadioButton layoutX="368.0" layoutY="199.0" mnemonicParsing="false" onAction="#radioSpeed" text="Need for Speed" toggleGroup="$movies" />
+      <RadioButton fx:id="speed" layoutX="368.0" layoutY="199.0" mnemonicParsing="false" onAction="#radioSpeed" text="Need for Speed" toggleGroup="$movies" />
       <Label layoutX="388.0" layoutY="218.0" text="Genre: Action" />
       <Label layoutX="388.0" layoutY="235.0" text="Price: 10€" />
       <Label fx:id="speedStock" layoutX="388.0" layoutY="252.0" text="Stock: 50" />
-      <Button layoutX="403.0" layoutY="312.0" mnemonicParsing="false" onAction="#exitMovies" text="Exit" />
+      <Button fx:id="exit" layoutX="403.0" layoutY="312.0" mnemonicParsing="false" onAction="#exitMovies" text="Exit" />
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="549.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/España.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="549.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Reino%20Unido.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="549.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Alemania.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioEspaña" layoutX="528.0" layoutY="55.0" mnemonicParsing="false" onAction="#pressedEspaña">
+         <toggleGroup>
+            <ToggleGroup fx:id="botonIdi" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioReinoUnido" layoutX="528.0" layoutY="78.0" mnemonicParsing="false" onAction="#pressedReinoUnido" selected="true" toggleGroup="$botonIdi" />
+      <RadioButton fx:id="radioAlemania" layoutX="528.0" layoutY="99.0" mnemonicParsing="false" onAction="#pressedAlemania" toggleGroup="$botonIdi" />
    </children>
 </Pane>

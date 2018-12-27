@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -44,5 +46,27 @@
          </font>
       </Label>
       <Button fx:id="exitBooks" layoutX="372.0" layoutY="329.0" mnemonicParsing="false" onAction="#pressedExit" text="Exit" />
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="555.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/España.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="555.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Reino%20Unido.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="555.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Alemania.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioEspaña" layoutX="534.0" layoutY="59.0" mnemonicParsing="false" onAction="#pressedEspaña">
+         <toggleGroup>
+            <ToggleGroup fx:id="botonIdio" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioReinoUnido" layoutX="534.0" layoutY="82.0" mnemonicParsing="false" onAction="#pressedReinoUnido" selected="true" toggleGroup="$botonIdio" />
+      <RadioButton fx:id="radioAlemania" layoutX="534.0" layoutY="103.0" mnemonicParsing="false" onAction="#pressedAlemania" toggleGroup="$botonIdio" />
    </children>
 </Pane>

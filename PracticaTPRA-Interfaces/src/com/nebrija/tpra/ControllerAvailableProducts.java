@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 
 public class ControllerAvailableProducts {
 	
@@ -15,6 +17,60 @@ public class ControllerAvailableProducts {
 
     @FXML
     private Button labelMovies;
+
+    @FXML
+    private Button exitButton;
+
+    @FXML
+    private RadioButton radioEspaña;
+
+    @FXML
+    private ToggleGroup botonIdiomas;
+
+    @FXML
+    private RadioButton radioReinoUnido;
+
+    @FXML
+    private RadioButton radioAlemania;
+    
+    @FXML
+    void pressedAlemania(ActionEvent event) {
+    	String g = "al";
+	    String t = "AL";
+	    Translate.setCountry(t);
+		Translate.setLanguage(g);
+		Translate.translate();
+		availableProducts.setText(Translate.getString48());
+		lableBooks.setText(Translate.getString10());
+		labelMovies.setText(Translate.getString11());
+		exitButton.setText(Translate.getString49());
+    }
+    
+    @FXML
+    void pressedEspaña(ActionEvent event) {
+    	String g = "es";
+	    String t = "ES";
+	    Translate.setCountry(t);
+		Translate.setLanguage(g);
+		Translate.translate();
+		availableProducts.setText(Translate.getString48());
+		lableBooks.setText(Translate.getString10());
+		labelMovies.setText(Translate.getString11());
+		exitButton.setText(Translate.getString49());
+    }
+    
+    @FXML
+    void pressedReinoUnido(ActionEvent event) {
+    	String g = "en";
+	    String t = "EN";
+	    Translate.setCountry(t);
+		Translate.setLanguage(g);
+		Translate.translate();
+		availableProducts.setText(Translate.getString48());
+		lableBooks.setText(Translate.getString10());
+		labelMovies.setText(Translate.getString11());
+		exitButton.setText(Translate.getString49());
+    }
     
     @FXML
     void exitAvailableProducts(ActionEvent event) {
@@ -34,21 +90,5 @@ public class ControllerAvailableProducts {
     	MainInterfaces.Interfaz5.show();
     }
 
-	protected Button getLableBooks() {
-		return lableBooks;
-	}
-
-	protected Button getLabelMovies() {
-		return labelMovies;
-	}
-
-	protected void setLableBooks(Button lableBooks) {
-		this.lableBooks = lableBooks;
-	}
-
-	protected void setLabelMovies(Button labelMovies) {
-		this.labelMovies = labelMovies;
-	}
-
-}
+} 
 

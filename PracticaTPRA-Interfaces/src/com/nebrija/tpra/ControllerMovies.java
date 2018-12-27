@@ -2,10 +2,18 @@ package com.nebrija.tpra;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 
 public class ControllerMovies {
+	
+	@FXML
+    private Label availablemovies;
+
+	@FXML
+    private RadioButton starwars;
 
     @FXML
     private ToggleGroup movies;
@@ -14,16 +22,91 @@ public class ControllerMovies {
     private Label starStock;
 
     @FXML
+    private RadioButton shining;
+
+    @FXML
     private Label shiningStock;
+
+    @FXML
+    private RadioButton ryan;
 
     @FXML
     private Label ryanStock;
 
     @FXML
+    private RadioButton toy;
+
+    @FXML
     private Label toyStock;
 
     @FXML
+    private RadioButton speed;
+
+    @FXML
     private Label speedStock;
+
+    @FXML
+    private Button exit;
+
+    @FXML
+    private RadioButton radioEspaña;
+
+    @FXML
+    private ToggleGroup botonIdi;
+
+    @FXML
+    private RadioButton radioReinoUnido;
+
+    @FXML
+    private RadioButton radioAlemania;
+    
+    @FXML
+    void pressedAlemania(ActionEvent event) {
+    	String g = "al";
+	    String t = "AL";
+	    Translate.setCountry(t);
+		Translate.setLanguage(g);
+		Translate.translate();
+		availablemovies.setText(Translate.getString51());
+		starwars.setText(Translate.getString28());
+		shining.setText(Translate.getString29());
+		ryan.setText(Translate.getString30());
+		toy.setText(Translate.getString31());
+		speed.setText(Translate.getString32());
+		exit.setText(Translate.getString49());;
+    }
+
+    @FXML
+    void pressedEspaña(ActionEvent event) {
+    	String g = "es";
+	    String t = "ES";
+	    Translate.setCountry(t);
+		Translate.setLanguage(g);
+		Translate.translate();
+		availablemovies.setText(Translate.getString51());
+		starwars.setText(Translate.getString28());
+		shining.setText(Translate.getString29());
+		ryan.setText(Translate.getString30());
+		toy.setText(Translate.getString31());
+		speed.setText(Translate.getString32());
+		exit.setText(Translate.getString49());
+    }
+
+    @FXML
+    void pressedReinoUnido(ActionEvent event) {
+    	String g = "en";
+	    String t = "EN";
+	    Translate.setCountry(t);
+		Translate.setLanguage(g);
+		Translate.translate();
+		availablemovies.setText(Translate.getString51());
+		starwars.setText(Translate.getString28());
+		shining.setText(Translate.getString29());
+		ryan.setText(Translate.getString30());
+		toy.setText(Translate.getString31());
+		speed.setText(Translate.getString32());
+		exit.setText(Translate.getString49());
+    }
 
     @FXML
     void exitMovies(ActionEvent event) {

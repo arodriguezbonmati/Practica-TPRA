@@ -5,12 +5,14 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nebrija.tpra.ControllerConversor">
    <children>
-      <Label layoutX="230.0" layoutY="63.0" text="CONVERTER">
+      <Label fx:id="converterlabel" layoutX="230.0" layoutY="63.0" text="CONVERTER">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -42,7 +44,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="279.0" layoutY="339.0" mnemonicParsing="false" onAction="#exitConverter" text="Exit" />
+      <Button fx:id="exitButton" layoutX="279.0" layoutY="339.0" mnemonicParsing="false" onAction="#exitConverter" text="Exit" />
       <RadioButton layoutX="204.0" layoutY="188.0" mnemonicParsing="false" onAction="#radioDolar">
          <toggleGroup>
             <ToggleGroup fx:id="radioCurrency" />
@@ -50,5 +52,27 @@
       </RadioButton>
       <RadioButton layoutX="279.0" layoutY="188.0" mnemonicParsing="false" onAction="#radioLibra" toggleGroup="$radioCurrency" />
       <RadioButton layoutX="345.0" layoutY="188.0" mnemonicParsing="false" onAction="#radioYen" prefHeight="17.0" prefWidth="10.0" toggleGroup="$radioCurrency" />
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="555.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/España.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="555.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Reino%20Unido.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="555.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Alemania.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioEspaña" layoutX="534.0" layoutY="50.0" mnemonicParsing="false" onAction="#pressedEspaña">
+         <toggleGroup>
+            <ToggleGroup fx:id="botonIdiom" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioReinoUnido" layoutX="534.0" layoutY="72.0" mnemonicParsing="false" onAction="#pressedReinoUnido" selected="true" toggleGroup="$botonIdiom" />
+      <RadioButton fx:id="radioAlemania" layoutX="534.0" layoutY="93.0" mnemonicParsing="false" onAction="#pressedAlemania" toggleGroup="$botonIdiom" />
    </children>
 </Pane>

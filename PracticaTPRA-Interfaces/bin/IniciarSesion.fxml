@@ -45,7 +45,7 @@
             <ToggleGroup fx:id="botonIdioma" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="radioReinoUnido" layoutX="514.0" layoutY="52.0" mnemonicParsing="false" onAction="#pressedReinoUnido" toggleGroup="$botonIdioma" />
+      <RadioButton fx:id="radioReinoUnido" layoutX="514.0" layoutY="52.0" mnemonicParsing="false" onAction="#pressedReinoUnido" selected="true" toggleGroup="$botonIdioma" />
       <RadioButton fx:id="radioAlemania" layoutX="514.0" layoutY="73.0" mnemonicParsing="false" onAction="#pressedAlemania" toggleGroup="$botonIdioma" />
       <Button fx:id="exitIniciarSesion" layoutX="323.0" layoutY="318.0" mnemonicParsing="false" onAction="#exitIniciarSesion" text="Exit" />
    </children>

@@ -2,6 +2,10 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -14,6 +18,28 @@
       </Label>
       <Button fx:id="lableBooks" layoutX="262.0" layoutY="167.0" mnemonicParsing="false" onAction="#pressedBooks" prefHeight="25.0" prefWidth="94.0" text="Books" />
       <Button fx:id="labelMovies" layoutX="262.0" layoutY="240.0" mnemonicParsing="false" onAction="#pressedMovies" prefHeight="25.0" prefWidth="94.0" text="Movies" />
-      <Button layoutX="292.0" layoutY="319.0" mnemonicParsing="false" onAction="#exitAvailableProducts" text="Exit" />
+      <Button fx:id="exitButton" layoutX="292.0" layoutY="319.0" mnemonicParsing="false" onAction="#exitAvailableProducts" text="Exit" />
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="545.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/España.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="545.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Reino%20Unido.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="545.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Scene%20Builder/Alemania.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="radioEspaña" layoutX="524.0" layoutY="40.0" mnemonicParsing="false" onAction="#pressedEspaña">
+         <toggleGroup>
+            <ToggleGroup fx:id="botonIdiomas" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioReinoUnido" layoutX="524.0" layoutY="62.0" mnemonicParsing="false" onAction="#pressedReinoUnido" selected="true" toggleGroup="$botonIdiomas" />
+      <RadioButton fx:id="radioAlemania" layoutX="524.0" layoutY="83.0" mnemonicParsing="false" onAction="#pressedAlemania" toggleGroup="$botonIdiomas" />
    </children>
 </Pane>
