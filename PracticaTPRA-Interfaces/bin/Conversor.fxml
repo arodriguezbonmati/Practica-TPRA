@@ -16,7 +16,7 @@
          </font>
       </Label>
       <TextField fx:id="numeroEuros" layoutX="202.0" layoutY="141.0" prefHeight="25.0" prefWidth="172.0" />
-      <TextField fx:id="calculado" layoutX="204.0" layoutY="227.0" prefHeight="25.0" prefWidth="172.0" />
+      <TextField fx:id="calculado" editable="false" focusTraversable="false" layoutX="204.0" layoutY="227.0" prefHeight="25.0" prefWidth="172.0" />
       <Label layoutX="386.0" layoutY="140.0" text="€">
          <font>
             <Font name="System Bold" size="18.0" />

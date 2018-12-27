@@ -67,7 +67,7 @@ public class ControllerIniciarSesion {
     		
     	}else
     		MainInterfaces.Interfaz1.show();
-    }
+    } 
     
     
     @FXML
@@ -116,6 +116,6 @@ public class ControllerIniciarSesion {
 		passwordText.setText(Translate.getString43());
 		enterButton.setText(Translate.getString44());
 		exitIniciarSesion.setText(Translate.getString49());
-    }
-
+    } 
+ 
 }

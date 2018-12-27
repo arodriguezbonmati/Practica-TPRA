@@ -2,6 +2,7 @@ package com.nebrija.tpra;
 
 import java.util.Scanner;
 
+
 public class User {
 	
 	private static  String username;
@@ -18,6 +19,51 @@ public class User {
 	}
 	
 	static User user1 = new User("Alvaro", "alvaro@gmail.com", "qwerty");
+	
+	public static class LogIn{
+		@SuppressWarnings({"resource" })
+		public static void LogIn() {
+			System.out.println("Introduce the necessary data");
+			System.out.print("Username: ");
+			Scanner username=new Scanner(System.in);
+			String username_1;
+			username_1=username.nextLine();
+			System.out.print("Email: ");
+			Scanner email=new Scanner(System.in);
+			String email_1;
+			email_1=email.nextLine();
+			System.out.print("Password: ");
+			Scanner password=new Scanner(System.in);
+			String password_1;
+			password_1=password.nextLine();
+			
+			if(username_1.equals(User.getUsername()) && email_1.equals(User.getEmail()) && password_1.equals(User.getPassword())) {
+				Main.international();
+			}else {
+				EXCP k = new EXCP(); 
+				try{
+					k.validateI(username_1);
+				}catch(MyException e){
+					
+					e.printStackTrace();
+				}
+				try{
+					k.validateE(email_1);
+				}catch(MyException e){
+					
+					e.printStackTrace();
+				try{
+					k.validateP(password_1);
+				}catch(MyException e1){
+					
+					e1.printStackTrace();	
+				}
+				password.close();
+				}
+			}
+		} 
+		
+	}
 	
 	
 	
@@ -51,48 +97,6 @@ public class User {
 		this.password = password;
 	} 
 
-	@SuppressWarnings({"resource" })
-	public static void LogIn() {
-		System.out.println("Introduce the necessary data");
-		System.out.print("Username: ");
-		Scanner username=new Scanner(System.in);
-		String username_1;
-		username_1=username.nextLine();
-		System.out.print("Email: ");
-		Scanner email=new Scanner(System.in);
-		String email_1;
-		email_1=email.nextLine();
-		System.out.print("Password: ");
-		Scanner password=new Scanner(System.in);
-		String password_1;
-		password_1=password.nextLine();
-		
-		if(username_1.equals(User.getUsername()) && email_1.equals(User.getEmail()) && password_1.equals(User.getPassword())) {
-			Main.international();
-		}else {
-			EXCP k = new EXCP();
-			try{
-				k.validateI(username_1);
-			}catch(MyException e){
-				
-				e.printStackTrace();
-			}
-			try{
-				k.validateE(email_1);
-			}catch(MyException e){
-				
-				e.printStackTrace();
-			try{
-				k.validateP(password_1);
-			}catch(MyException e1){
-				
-				e1.printStackTrace();	
-			}
-			password.close();
-			}
-		}
-	}
-	
 }
 
 

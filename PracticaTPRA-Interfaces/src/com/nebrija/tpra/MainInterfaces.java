@@ -33,7 +33,7 @@ public class MainInterfaces extends Application{
 		Scene scene2 = new Scene(root2);
 		Interfaz2.setTitle("Iniciar Sesion");
 		Interfaz2.setScene(scene2);
-		
+		 
 		
 		Interfaz3 = new Stage();
 		URL res3 = getClass().getClassLoader().getResource("AvailableProducts.fxml");

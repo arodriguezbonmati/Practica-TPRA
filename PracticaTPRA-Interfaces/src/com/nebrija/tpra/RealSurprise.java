@@ -7,5 +7,6 @@ public class RealSurprise implements Surprise {
 		System.out.println(Translate.getString38());
 		
 	}
-
+	
+	
 }

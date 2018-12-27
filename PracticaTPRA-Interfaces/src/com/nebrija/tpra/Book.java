@@ -99,7 +99,7 @@ public class Book {
 			System.out.println("5. "+book5.book_name+".");
 			buy=buy1.nextInt();
 			
-			switch(buy) {
+			switch(buy) { 
 			
 			case 1: System.out.println(Translate.getString25()+" "+book1.book_name+".");
 			book1.book_stock--;
