@@ -19,39 +19,29 @@ When you run the project you are required a username an email and a password:
 
 
 # Main menu
- ```
---- WELCOME ---
-What would you like to do?
- 1. Check our products.
- 2. Search products by genre.
- 3. Convert from € to $.
- 4. Leave the shop.
-```
-
-+ The first option lets you see all the products available classified by category, here you can also buy products.
-
-+ The second option enables you to browse the book and movie genres and choose from there.
-
-+ The third option is for converting currency from € to $.
-
-+ The last option is used to leave the shop.
+ This is how the Main Menu looks like:
+ 
+ ![menu](https://user-images.githubusercontent.com/43890020/50490772-3c105000-0a0f-11e9-8c87-5a68494d4aaf.png)
 
 # Testing
 
-Most of the project is tested by the different classes such as UserTest, ProductTest and InternationalizationTest.
+Most of the project is tested using the Eclipse extension called Eclemma. At first, I only had around a 12% of the project tested, but now, using Eclemma, I managed to boost the testing percentage to almost 40%.
 
-Example of the Username testing.
++ Before
 
- ```
-class UserTest {
+![tests antes](https://user-images.githubusercontent.com/43890020/50490582-1fbfe380-0a0e-11e9-9191-bd17a52a376f.png)
 
-	@Test
-	void testGetEmail() {
-		User user1 = new User("Alvaro", "alvaro@gmail.com", "qwerty");
-		assertEquals(user1.getUsername(), "Alvaro");
-	}
-	
-```
++ After
+
+![tests despues](https://user-images.githubusercontent.com/43890020/50490692-b9879080-0a0e-11e9-97a5-80fa3fba61d0.png)
+
+
+# Internationalization
+
+The project is fully functional in English, Spanish and German. It comes by default in English, but you can change it to Spanish or German whenever you want.
+
+![internacional](https://user-images.githubusercontent.com/43890020/50490873-b3de7a80-0a0f-11e9-8b55-4b6fd3c3a572.png)
+
 
 # Handling Exceptions
 
@@ -63,16 +53,6 @@ public void validateI(String i) throws MyException{
 			throw new MyException("Incorrect user");
 		}
 	}
-```
-
-# Internationalization
-
-The project is fully functional in English, Spanish and German.
-```
-Choose a language
-1. Español
-2. English
-3. Deutsch
 ```
 
 # Design patterns + Interface
