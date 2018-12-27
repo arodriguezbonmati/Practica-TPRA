@@ -145,7 +145,8 @@ public class ControllerBooks {
     	stockRings--;
     	String stringstockRings = Integer.toString(stockRings);
     	ringsStock.setText("Stock: "+stringstockRings);
-    	
+    	Hilos va = new Hilos();
+    	va.start();
     }
 
     @FXML
@@ -167,3 +168,7 @@ public class ControllerBooks {
     }
 
 }
+
+
+
+
