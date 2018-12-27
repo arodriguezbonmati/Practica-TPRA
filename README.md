@@ -1,4 +1,4 @@
-[![BCH compliance](https://bettercodehub.com/edge/badge/varorb99/Practica-TPRA?branch=master)](https://bettercodehub.com/) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/86387e3c7dcb4973b1bc39546495fc1a)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=varorb99/Practica-TPRA&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2e09dc1efa5049719338b24083c388af)](https://www.codacy.com/app/varorb99/Prueba2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=varorb99/Prueba2&amp;utm_campaign=Badge_Grade)
 
 -----------------------------------
 # Improving ecommerce platform.
