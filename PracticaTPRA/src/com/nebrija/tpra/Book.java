@@ -77,7 +77,7 @@ public class Book {
 		System.out.println(book3.book_stock+" "+Translate.getString21());
 		System.out.println(Translate.getString22()+" "+book3.book_price+"€.");
 		System.out.println();
-		System.out.println(book4.book_name+".");
+		System.out.println(book4.book_name+"."); 
 		System.out.println(Translate.getString17()+" "+book4.book_genre);
 		System.out.println(book4.book_stock+" "+Translate.getString21());
 		System.out.println(Translate.getString22()+" "+book4.book_price+"€.");

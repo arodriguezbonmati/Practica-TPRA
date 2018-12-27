@@ -2,7 +2,7 @@ package com.nebrija.tpra;
 
 import java.util.Scanner;
 
-
+ 
 public class Main {
 	
 	public static void main(String[] args) {
@@ -55,7 +55,7 @@ public class Main {
 		System.out.println("3. "+Translate.getString5());
 		System.out.println("4. "+Translate.getString6());
 		
-		
+		 
 		
 		Scanner elige1 = new Scanner(System.in);
 	    int elige = 0;
@@ -154,8 +154,8 @@ public class Main {
 				System.out.println(Book.book2.getBook_name());
 				System.out.println(Book.book2.getBook_price()+"€.");
 				System.out.println();
-				System.out.println(Book.book3.getBook_name());
-				System.out.println(Book.book3.getBook_price()+"€.");
+				System.out.println(Book.book5.getBook_name());
+				System.out.println(Book.book5.getBook_price()+"€.");
 				System.out.println();
 				Main.international();
 			break;
